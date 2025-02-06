@@ -1,0 +1,193 @@
+/* General Container Styling */
+.attendance-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    background-color: #f4f6f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .attendance-container:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .attendance-container h2 {
+    font-size: 2.5rem;
+    color: #2d3e50;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .attendance-container h3.attendance-history {
+    margin-top: 30px;
+    font-size: 1.6rem;
+    color: #2d3e50;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .attendance-container .loading {
+    font-size: 1.2rem;
+    color: #888;
+    text-align: center;
+  }
+  
+  /* Employee List Styling */
+  .attendance-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .attendance-container li {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .attendance-container li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .attendance-container li div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .attendance-container li strong {
+    font-size: 1.3rem;
+    color: #3a4d73;
+    margin-bottom: 8px;
+  }
+  
+  .attendance-container li span {
+    color: #6b7c99;
+    font-size: 1.1rem;
+  }
+  
+  /* Button Styling */
+  .attendance-container button {
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 150px;
+  }
+  
+  .attendance-container button:hover {
+    background: linear-gradient(145deg, #0056b3, #004085);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .attendance-container button:focus {
+    outline: none;
+  }
+  
+  /* Date Picker Styling */
+  .attendance-container .date-picker {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .attendance-container .date-picker label {
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .attendance-container input[type="date"] {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-left: 15px;
+    width: 230px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .attendance-container input[type="date"]:focus {
+    border-color: #007bff;
+  }
+  
+  /* Attendance History List Styling */
+  .attendance-container ul li {
+    background-color: #fafafa;
+    border-left: 6px solid #007bff;
+    padding: 15px 20px;
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .attendance-container ul li p {
+    margin: 0;
+  }
+  
+  .attendance-container ul li span {
+    color: #777;
+  }
+  
+  .attendance-container ul li:hover {
+    background-color: #e9f5ff;
+    cursor: pointer;
+  }
+  
+  /* Animated and Responsive Design */
+  @media (max-width: 768px) {
+    .attendance-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .attendance-container h2 {
+      font-size: 2rem;
+    }
+  
+    .attendance-container h3.attendance-history {
+      font-size: 1.4rem;
+    }
+  
+    .attendance-container button {
+      width: 130px;
+      font-size: 0.9rem;
+    }
+  
+    .attendance-container input[type="date"] {
+      width: 180px;
+    }
+  
+    .attendance-container ul li {
+      font-size: 1rem;
+    }
+  
+    .attendance-container li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  

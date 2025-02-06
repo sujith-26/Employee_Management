@@ -1,0 +1,114 @@
+/* Overall container for the leave approval section */
+.leave-approval {
+  padding: 30px;
+  background-color: #f4f7fb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+/* Heading for the section */
+.leave-approval h3 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* When no leave requests are available */
+.leave-approval p {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Styling for each leave request card */
+.leave-request {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styling for the text content within the leave request */
+.leave-request p {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Select dropdown styling */
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #e8f4ff;
+}
+
+/* Submit button styling */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .leave-approval {
+    padding: 20px;
+  }
+
+  .leave-request {
+    padding: 15px;
+  }
+
+  .leave-approval h3 {
+    font-size: 1.6rem;
+  }
+
+  .leave-request p {
+    font-size: 0.9rem;
+  }
+
+  select, button {
+    font-size: 0.9rem;
+  }
+}

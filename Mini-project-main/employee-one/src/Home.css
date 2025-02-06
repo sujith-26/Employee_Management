@@ -1,0 +1,197 @@
+/* Link Google Fonts in HTML */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600&display=swap');
+
+.home-after-login-container {
+  display: flex; /* Flex layout for overall container */
+  min-height: 100vh; /* Ensure the container takes full height */
+  background: #f4f4f4; /* Background color */
+  margin-left: 250px; /* Offset content by navbar width */
+  font-family: 'Roboto', sans-serif; /* Default font */
+}
+
+.navbar {
+  width: 250px; /* Fixed width for the navbar */
+  background: #1c1c1c; /* Dark background */
+  padding: 20px;
+  color: white;
+  position: fixed; /* Keep navbar fixed */
+  height: 100%; /* Full height */
+  transition: all 0.3s; /* Smooth transition for width and padding */
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  font-family: 'Poppins', sans-serif; /* Navbar font */
+}
+
+.navbar.collapsed {
+  width: 70px; /* Collapsed width */
+}
+
+.logo {
+  font-size: 24px;
+  color: #45f3ff;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Font for logo */
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin: 15px 0;
+}
+
+li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: block;
+  padding: 10px 0;
+  font-family: 'Roboto', sans-serif; /* Font for menu links */
+}
+
+li a:hover {
+  color: #45f3ff; /* Highlight link */
+}
+
+.content {
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out; /* Smooth transition */
+  width: calc(100% - 250px); /* Take up the remaining space */
+  font-family: 'Roboto', sans-serif; /* Font for content */
+}
+
+.content.collapsed {
+  margin-left: 70px; /* Adjust content when navbar is collapsed */
+  width: calc(100% - 70px); /* Take up less space when collapsed */
+}
+
+.home-hero {
+  background: linear-gradient(135deg, #45f3ff, #1c1c1c);
+  color: white;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif; /* Hero section font */
+}
+
+.dashboard-section {
+  margin-top: 20px;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  background: #45f3ff;
+  color: #23242a;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto', sans-serif; /* Font for cards */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Lift effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif; /* Font for card titles */
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif; /* Font for project table */
+}
+
+.project-table th,
+.project-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.project-table th {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.project-table td {
+  background-color: #ffffff;
+}
+
+.project-table tr:hover {
+  background-color: #f4f4f4;
+}
+
+.completed-projects-section,
+.ongoing-projects-section {
+  margin-top: 30px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1c1c1c;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif; /* Font for footer */
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 200px;
+  }
+
+  .content {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+  }
+
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .home-hero {
+    padding: 30px;
+  }
+}

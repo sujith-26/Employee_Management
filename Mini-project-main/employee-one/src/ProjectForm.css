@@ -1,0 +1,149 @@
+/* Main container for the project form */
+.project-form-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  .project-form-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input fields */
+  .project-form input[type="text"],
+  .project-form input[type="datetime-local"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Employee selection checkboxes */
+  .employee-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .employee-selection strong {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .employee-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .employee-checkbox input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  /* Selected employees display */
+  .project-form-container div strong {
+    color: #555;
+  }
+  
+  /* Add Project button */
+  .project-form button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .project-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Ongoing projects section */
+  .ongoing-projects-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+  }
+  
+  .ongoing-projects-section h3 {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .ongoing-projects-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .project-item {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-item strong {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .project-item p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Mark as Done button */
+  .mark-done-button {
+    background-color: #e57373;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .mark-done-button:hover {
+    background-color: #ef5350;
+  }
+  .project-form-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .add-project-button {
+    margin-bottom: 20px;
+  }
+  

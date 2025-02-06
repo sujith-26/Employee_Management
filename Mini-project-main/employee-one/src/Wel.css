@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body.welcome-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white; /* Make text color visible */
+}
+
+.welcome-container {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background: rgba(0, 0, 0, 0.6);
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    font-size: 24px;
+    color: #45f3ff;
+    flex: 1; /* Allow logo to grow and occupy available space */
+}
+
+.nav-links {
+    display: flex; /* Use flexbox for navigation links */
+    align-items: center; /* Center links vertically */
+    margin-left: auto; /* Pushes links to the right */
+}
+
+.nav-links a {
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+    margin-left: 20px; /* Spacing between links */
+    font-size: 16px; /* Font size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #45f3ff; /* Hover effect color */
+}
+
+.hero-section {
+    padding: 40px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #45f3ff;
+    color: #23242a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #36c0e2; /* Darker shade on hover */
+}

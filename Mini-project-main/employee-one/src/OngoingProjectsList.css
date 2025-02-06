@@ -1,0 +1,39 @@
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .ongoing-projects,
+  .done-projects {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .project-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .project-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .mark-done-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .mark-done-button:hover {
+    background-color: #45a049;
+  }
+  

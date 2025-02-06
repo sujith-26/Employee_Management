@@ -1,0 +1,103 @@
+/* Layout container */
+.layout-container {
+    display: flex; /* Flexbox layout for the container */
+    min-height: 100vh; /* Full height of the viewport */
+    background: #f4f4f4; /* Background color for the entire page */
+    position: relative; /* Position relative for the toggle button */
+}
+
+/* Reversed C-shaped Navbar */
+.navbar {
+    width: 250px; /* Fixed width for the navbar */
+    background: #1c1c1c; /* Background color for the navbar */
+    padding: 20px;
+    color: white;
+    position: fixed; /* Keep navbar fixed */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center the navbar vertically */
+    height: 60%; /* Adjust height for partial view */
+    transition: transform 0.3s ease;
+    border-top-right-radius: 150px; /* Large radius for the top-right corner */
+    border-bottom-right-radius: 150px; /* Large radius for the bottom-right corner */
+    z-index: 10; /* Ensure navbar overlaps content */
+}
+
+/* Collapsed Navbar */
+.navbar.collapsed {
+    transform: translateX(-200%); /* Move navbar out of view when collapsed */
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    color: #45f3ff; /* Logo color */
+    margin-bottom: 30px; /* Space below the logo */
+    text-align: center;
+}
+
+/* Toggle button */
+.toggle-btn {
+    position: absolute; /* Position the button fixed in relation to the container */
+    top: 50%; /* Center it vertically */
+    left: 0;
+    transform: translateY(-50%);
+    background: #45f3ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s;
+    z-index: 20; /* Ensure the toggle button is always visible above the navbar */
+}
+
+.toggle-btn:hover {
+    background: #3ab2d9;
+}
+
+/* Navbar links */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center links within navbar */
+    height: 100%; /* Ensure links take up full navbar height */
+}
+
+li {
+    margin: 15px 0;
+    text-align: left; /* Align text to the left */
+    padding-left: 40%; /* Adjust padding to position links */
+}
+
+li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+}
+
+li a:hover {
+    color: #45f3ff;
+}
+
+/* Content */
+.content {
+    position: absolute; /* Absolute positioning to overlap the navbar */
+    top: 0;
+    left: 100px;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    z-index: 5; /* Ensure content is below the navbar */
+}
+
+.content.collapsed {
+    margin-left: 0;
+}

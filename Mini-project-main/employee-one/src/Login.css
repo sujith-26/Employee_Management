@@ -1,0 +1,100 @@
+body.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1c1c1c, #23242a);
+}
+
+/* Other styles specific to the login component */
+.login-container {
+  width: 100%;
+  max-width: 400px; /* Limit maximum width */
+  margin: 20px; /* Margin for small screens */
+}
+
+.box {
+  position: relative;
+  padding: 40px;
+  background: #28292d;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    color: #45f3ff;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 15px 10px;
+    background: transparent;
+    border: 2px solid #45f3ff;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.inputBox input:focus {
+    border-color: #81d4fa;
+    box-shadow: 0 0 5px rgba(129, 212, 250, 0.7);
+    outline: none;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #8f8f8f;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span {
+    top: -20px;
+    left: 10px;
+    color: #45f3ff;
+    font-size: 15px;
+}
+
+.login-button {
+    padding: 15px; /* Larger button size */
+    border: none;
+    border-radius: 8px;
+    background: #45f3ff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+    background: #1e88e5;
+    transform: translateY(-2px);
+}
+
+.login-button:disabled {
+    background: #ccc; /* Disabled button color */
+    cursor: not-allowed; /* Change cursor for disabled state */
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    color: #ff0000; /* Error message color */
+}
